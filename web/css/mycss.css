@@ -1,0 +1,57 @@
+header {
+    background-color: rgb(0, 5, 136);
+}
+footer{
+    background-color: rgb(0, 5, 136);
+    font-size: 30px;
+    text-align: center;
+}
+.card{
+	height: 250px !IMPORTANT;
+} 
+#fotos {
+	width: 1440px;
+	height: 600px;
+}
+.slider {
+	overflow: hidden;
+}
+
+.slider ul {
+	padding: 0;
+	display: flex;
+	width: 300%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	list-style: none;
+}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	33% {margin-left: -100%;}
+	63% {margin-left: -100%;}
+	
+	66% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+.rating {
+	font-size: 0 ;
+	display: inline-block ;
+}
+.rating a {
+	text-decoration: none ;
+	display: inline-block ;
+	font-size: 32px ;
+	font-size: 2rem ;    
+	color: #888 ;
+}
+.rating:hover a {
+	color: gold ;
+}
+.rating > a:hover ~ a {
+	color: #888 ;
+}
